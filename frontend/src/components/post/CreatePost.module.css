@@ -1,0 +1,52 @@
+.form {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.avatar {
+  width: 42px; height: 42px;
+  font-size: 17px;
+  border: 2px solid var(--border);
+  background: var(--bg3);
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.textarea {
+  resize: none;
+  flex: 1;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.codeSection {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.codeInput {
+  resize: vertical;
+  font-family: 'Space Mono', monospace !important;
+  font-size: 13px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.codeBtn { font-family: 'Space Mono', monospace; font-size: 13px; }

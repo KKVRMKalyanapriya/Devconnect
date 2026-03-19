@@ -1,0 +1,76 @@
+.page { min-height: 100vh; }
+
+.cover {
+  height: 180px;
+  background: linear-gradient(135deg, #1a1030 0%, #0f1a30 50%, #0a1a20 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.coverPattern {
+  position: absolute; inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(124,106,255,0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(106,255,184,0.1) 0%, transparent 40%);
+}
+
+.content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px 40px;
+}
+
+.profileHeader {
+  display: flex;
+  gap: 24px;
+  margin-top: -50px;
+  margin-bottom: 32px;
+}
+
+.avatar {
+  width: 100px; height: 100px;
+  font-size: 40px;
+  border: 4px solid var(--bg);
+  background: var(--bg3);
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.headerRight { flex: 1; padding-top: 16px; }
+
+.nameRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.name { font-size: 24px; font-weight: 800; }
+.username { color: var(--text2); font-size: 14px; margin-top: 2px; }
+
+.bio { color: var(--text2); font-size: 14px; line-height: 1.6; margin-bottom: 10px; }
+
+.github {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--accent3);
+  margin-bottom: 12px;
+  font-family: 'Space Mono', monospace;
+}
+.github:hover { text-decoration: underline; }
+
+.skills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+
+.stats { display: flex; gap: 24px; }
+.stat { display: flex; flex-direction: column; align-items: center; }
+.statNum { font-size: 20px; font-weight: 800; }
+.statLabel { font-size: 12px; color: var(--text2); }
+
+.postsSection { display: flex; flex-direction: column; gap: 16px; }
+.postsTitle { font-size: 16px; font-weight: 700; color: var(--text2); text-transform: uppercase; letter-spacing: 1px; }
+.posts { display: flex; flex-direction: column; gap: 16px; }
+.empty { text-align: center; padding: 60px 20px; color: var(--text2); }
